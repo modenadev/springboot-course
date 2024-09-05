@@ -4,12 +4,13 @@ import com.educandoweb.course.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
 
 @Entity
 @Table(name = "tb_order")
-public class Order  implements java.io.Serializable {
+public class Order  implements Serializable {
 
     public static final long serialVersionUID = 1L;
 
